@@ -6,6 +6,7 @@ A west module to get the health endpoint out of the box
 You only need to import the module created by health_module() as a web_module into a west.WebModule, see the following example:
 
 ```vlang
+import dracks.west
 import dracks.west_health
 
 fn main() {
