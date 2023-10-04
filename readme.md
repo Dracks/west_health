@@ -11,7 +11,7 @@ import dracks.westhealth
 fn main() {
 	mut app_module := west.WebModule{}
 
-	app_module.import_web_module(mut westhealth.health_module())
+	app_module.import_web_module(mut westhealth.new_module())
 
 	app_module.init()!
 
