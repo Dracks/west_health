@@ -1,4 +1,4 @@
-module west_health
+module westhealth
 
 import vweb
 import dracks.west
@@ -18,7 +18,7 @@ fn (mut self HealthController) ready() vweb.Result {
 	return self.text('{status: UP}')
 }
 
-pub fn health_module() &west.WebModule {
+pub fn new_module() &west.WebModule {
 	mut mod := &west.WebModule{}
 
 	mod.register_controller[HealthController]()
