@@ -3,17 +3,17 @@ module westhealth
 import vweb
 import dracks.west
 
-[path: '/.well-known']
+@[path: '/.well-known']
 pub struct HealthController {
 	vweb.Context
 }
 
-['/live']
+@['/live']
 fn (mut self HealthController) health() vweb.Result {
 	return self.text('{status: UP}')
 }
 
-['/ready']
+@['/ready']
 fn (mut self HealthController) ready() vweb.Result {
 	return self.text('{status: UP}')
 }
